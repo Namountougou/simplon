@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Menu from "./components/Menu";
+import AddComponent from "./pages/AddComponent";
+import Home from "./pages/Home";
+import TechnoList from "./pages/TecnoList";
+import handleAddTechno from "./Function/HANDLE";
 
 function App() {
+  <option value="Dertz">DEUXTZ</option>;
+  const [technos, setTechnos] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/add"
+          element={<AddComponent handleAddTechno={handleAddTechno} />}
+        />
+        <Route path="/list" element={<TechnoList />} />
+      </Routes>
     </div>
   );
 }
