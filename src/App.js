@@ -10,7 +10,6 @@ import handleAddTechno from "./Function/HANDLE";
 function App() {
   <option value="Dertz">DEUXTZ</option>;
   const [technos, setTechnos] = useState([]);
-
   return (
     <div>
       <Routes>
@@ -18,7 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route
           path="/add"
-          element={<AddComponent handleAddTechno={handleAddTechno} />}
+          element={<AddComponent handleAddTechno={handleAddTechno} a={10} />}
         />
         <Route path="/list" element={<TechnoList />} />
       </Routes>

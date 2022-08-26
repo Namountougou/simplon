@@ -1,4 +1,6 @@
-const handleAddTechno = (techno) => {
-  console.log("handleAddTechno", techno);
+const handleAddTechno = (techno, a) => {
+  console.log(techno);
+  console.log(a);
 };
+
 export default handleAddTechno;

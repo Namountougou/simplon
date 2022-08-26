@@ -1,23 +1,19 @@
-.menu{
-    
-   
-    font-size: 1.2em; 
+.menu {
+  font-size: 1.2em;
 }
-ul{
-    list-style-type: none;
-    display: flex;
-     justify-content: space-around;  
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
-a{
-    text-decoration: none;
-    color: black;
-    
+a {
+  text-decoration: none;
+  color: black;
 }
-.item{
-    text-decoration: underline;
-    color: aqua;
-    text-shadow: 10px rgb(255, 0, 0);
-    font-weight: bold;
-    font-size: 1.2em;
-    
+.item {
+  text-decoration: underline;
+  color: rgb(9, 198, 34);
+  text-shadow: 10px rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 1.2em;
 }
